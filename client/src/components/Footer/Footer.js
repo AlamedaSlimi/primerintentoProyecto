@@ -16,17 +16,17 @@ const Footer = () => {
     
             <ul className="footer__list">
                 <li>
-                    <Link to="/home" className="footer__items">Home</Link>
+                    <Link to="/home" className="footer__items">Inicio</Link>
                 </li>
                 <li>
-                    <Link to="/write" className="footer__items">Write</Link>
+                    <Link to="/write" className="footer__items">Escribir</Link>
                 </li>
                 <li>
-                    <Link to="/aboutus" className="footer__items">About</Link>
+                    <Link to="/aboutus" className="footer__items">Sobre nosotros</Link>
                 </li>
             </ul>
             <p className="footer__copyright">
-                copyright &#169; HIBATHULLA CM
+                 Copyright &#169; UABC
             </p>
         </footer>
     )
