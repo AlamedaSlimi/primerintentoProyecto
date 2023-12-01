@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { useRef, useState } from "react";
 import "./Form.scss"
 
-import write from "./write.png"
+import write from "./logintowrite.jpg"
 
 const Write = (props) => {
 
