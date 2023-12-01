@@ -50,21 +50,20 @@ const SignUp = () => {
 
                 <div className="signup1">
 
-                    <h3 className="signup1__text">Welcome to BLOG</h3>
-                    <p className="signup1__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam aperiam est sequi eaque qui ipsam ipsum provident eum expedita.</p>
+                    <h3 className="signup1__text">Bienvenido a Philoblog</h3>
+                    <p className="signup1__para">Registrate para poder participar en una comunidad apasionada por cuestiones filosoficas y de dialecticas en general.</p>
                     <img src={vector2} alt="" className="signup1__vector" />
                 </div>
 
                 <div className="signup2">
                 <form onSubmit={submitHandler}> 
-                    <h3 className="signup2__text">Sign Up</h3>
+                    <h3 className="signup2__text">¡Registrate ahora!</h3>
                     {errors && <p className="signup2__error">{errors}</p>}
-                    <input ref={userRef} className="signup2__box" type="text" required placeholder="Username" />
-                    <input ref={emailRef} className="signup2__box" type="text" required placeholder="Email" />
-                    <input min="8" max="20" ref={passwordRef} className="signup2__box" type="password" required placeholder="Password" />
-                    <button className="signup2__submit">Sign Up</button>
+                    <input ref={userRef} className="signup2__box" type="text" required placeholder="Nombre de usuario" />
+                    <input ref={emailRef} className="signup2__box" type="text" required placeholder="Correo electronico" />
+                    <input min="8" max="20" ref={passwordRef} className="signup2__box" type="password" required placeholder="Contraseña" />
+                    <button className="signup2__submit">Registrarse</button>
                     </form>
-                    <p className="signup2__para">Already Registered? <Link to="/login">Log in now</Link></p>
                 </div>
 
 
