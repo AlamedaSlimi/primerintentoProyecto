@@ -4,9 +4,14 @@
     align-items: center;
     width: 90%;
     padding: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0 auto;
-    background-color: #ECECEC;
-    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 1rem 1.7rem rgba(0,0,0,0.1);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 
     @media screen and (max-width: 480px) {
         width: 85%;
@@ -19,7 +24,7 @@
         width: 6.5rem;
         padding: .9rem;
         border-radius: 7px;
-        background-color: #2D31FA;
+        background-color: rgb(24, 131, 0);
         width: 15rem;
         cursor: pointer;
         color: #fff;
