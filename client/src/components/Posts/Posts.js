@@ -36,7 +36,7 @@ const Posts = () => {
             
 
     return <div className="posts">
-    <h1 className="posts__title">Recent Articles</h1> 
+    <h1 className="posts__title">Articulos publicados</h1> 
     {loadedBlog.reverse().map(blog => {
        return <Post key={blog._id} id={blog._id} title={blog.title} category={blog.cat} date={blog.date} image={blog.image} />
     })}
