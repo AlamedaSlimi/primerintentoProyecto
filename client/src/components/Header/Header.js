@@ -27,27 +27,27 @@ const Header = () => {
         <header className="header">
         <img src={img12} alt="Header-logo" />
             <h1 className="header__logo">
-                BLOG
+                PHILOBLOG
             </h1>
             <nav className="header__nav">
                 <ul className="header__list">
-                    <NavLink activeClassName="headeractive" to="/home" className="header__items">Home</NavLink>
-                    <NavLink activeClassName="headeractive" to="/write" className="header__items">Write</NavLink>
-                    <NavLink activeClassName="headeractive" to="/aboutus" className="header__items">About us</NavLink>
+                    <NavLink activeClassName="headeractive" to="/home" className="header__items">Inicio</NavLink>
+                    <NavLink activeClassName="headeractive" to="/write" className="header__items">Escribir</NavLink>
+                    <NavLink activeClassName="headeractive" to="/aboutus" className="header__items">Sobre nosotros</NavLink>
                     {/* <NavLink activeClassName="headeractive" to="/" className="header__items">About us</NavLink> */}
                 </ul>
             </nav>
             {!user && <div className="header__authentication">
-                <Link to="/signin" className="header__login">Log in</Link>
-                <Link to="/signup" className="header__signup">Sign up</Link>
+                <Link to="/signin" className="header__login">Iniciar sesion</Link>
+                <Link to="/signup" className="header__signup">Registrarse</Link>
             </div>}
 
         {user && <div className="header__authentication">
                 <div className="header__user">
-                    <span className="header__welcome">Welcome</span>
+                    <span className="header__welcome">Bienvenid@</span>
                     <span className="header__welcomeuser">{user.username}</span>
                 </div>
-                <button onClick={logoutHandler} className="header__logout">Log out</button>
+                <button onClick={logoutHandler} className="header__logout">Salir</button>
             </div>}
 
             <div className="hamburger" onClick={() => setOpen(!open)}>
@@ -59,21 +59,21 @@ const Header = () => {
            {open && <ul className="hamburger__menu" style={{right: open ? "0" : "10vw"}}>
 
             {!user && <div className="hamburger__authentication">
-                <Link to="/signin" onClick={() => setOpen(!open)} className="header__login">Log in</Link>
-                <Link to="/signup" onClick={() => setOpen(!open)} className="header__signup">Sign up</Link>
+                <Link to="/signin" onClick={() => setOpen(!open)} className="header__login">Iniciar sesion</Link>
+                <Link to="/signup" onClick={() => setOpen(!open)} className="header__signup">Registrarse</Link>
             </div>}
 
         {user && <div className="hamburger__authentication">
                 <div className="header__user">
-                    <span className="header__welcome">Welcome</span>
+                    <span className="header__welcome">Bienvenid@</span>
                     <span className="header__welcomeuser">{user.username}</span>
                 </div>
-                <button onClick={logoutHandler} className="header__logout">Log out</button>
+                <button onClick={logoutHandler} className="header__logout">Salir</button>
             </div>}
 
-            <NavLink activeClassName="headeractive" to="/home" onClick={() => setOpen(!open)} className="hamburger__items">Home</NavLink>
-                    <NavLink onClick={() => setOpen(!open)} activeClassName="headeractive" to="/write" className="hamburger__items">Write</NavLink>
-                    <NavLink onClick={() => setOpen(!open)} activeClassName="headeractive" to="/aboutus" className="hamburger__items">About us</NavLink>
+            <NavLink activeClassName="headeractive" to="/home" onClick={() => setOpen(!open)} className="hamburger__items">Inicio</NavLink>
+                    <NavLink onClick={() => setOpen(!open)} activeClassName="headeractive" to="/write" className="hamburger__items">Escribir</NavLink>
+                    <NavLink onClick={() => setOpen(!open)} activeClassName="headeractive" to="/aboutus" className="hamburger__items">Sobre nosotros</NavLink>
             </ul>}
         </header>
     )
