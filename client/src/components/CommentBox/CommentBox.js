@@ -24,11 +24,11 @@ const CommentBox = (props) => {
 
     return <div className="commentbox">
         
-        {user && <button className="commentbox__add" onClick={showCommentBox}>Add a Comment</button>}
-        {!user && <h1 className="commentbox__addText">Log in to add comments</h1>}
+        {user && <button className="commentbox__add" onClick={showCommentBox}>Agrega un comentario</button>}
+        {!user && <h1 className="commentbox__addText">Inicia sesion para agregar comentarios</h1>}
         {loadComment && <CommentForm postId={props.postId} />}
 
-        <h3 className="commentbox__head">All comments</h3>
+        <h3 className="commentbox__head">Todos los comentarios</h3>
         <AllComments postId={props.postId} />
     </div>
 
