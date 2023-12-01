@@ -12,8 +12,8 @@ function HeadingBox() {
     return <div className="headingbox">
 
         <div className="headingbox__titlebox">
-            <h1 className="headingbox__title">Write your next blog <br/> Perfect way to find</h1>
-            {!user && <Link to="/signup" className="headingbox__btn">Sign Up</Link>}
+            <h1 className="headingbox__title">Reflexiones sin límites,<br/> pensamientos sin fronteras.</h1>
+            {!user && <Link to="/signup" className="headingbox__btn">Registrate</Link>}
         </div>
     </div>;
 }
