@@ -49,25 +49,24 @@ const LogIn = () => {
 
     // const logState = useSelector(state => state.auth.isLoggedIn)
     
-    return (
+return (
         <div className="signupPage">
             <div className="login">               
 
                 <div className="login1">
                 <form onSubmit={submitHandler}>
-                    <h3 className="login1__text">Log in</h3>
+                    <h3 className="login1__text">Inicia sesion</h3>
                     {errors && <p className="login1__error">{errors}</p>}
-                    <input ref={emailRef} className="login1__box" type="text" required placeholder="Email" />
-                    <input ref={passwordRef}  className="login1__box" type="password" required placeholder="Password" />
-                    <button className="login1__submit">Login</button>
+                    <input ref={emailRef} className="login1__box" type="text" required placeholder="Correo electronico" />
+                    <input ref={passwordRef}  className="login1__box" type="password" required placeholder="Contraseña" />
+                    <button className="login1__submit">Entrar</button>
                     </form>
-                    <p className="login1__para">New user? <Link to="/register">Register now</Link></p>
                 </div>
 
                 <div className="login2">
 
-                    <h3 className="login2__text">Welcome</h3>
-                    <h3 className="login2__text2">Start writing your blogs</h3>
+                    <h3 className="login2__text">Bienvenido</h3>
+                    <h3 className="login2__text2">Comienza a escribir articulos</h3>
                     <img src={vector6} alt="" className="login2__vector" />
                 </div>
 
