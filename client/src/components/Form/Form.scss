@@ -1,16 +1,27 @@
 .write {
     padding: 5rem;
-    // background-color: red;
+     background-color: white;
+     box-shadow: 0 1rem 1.7rem rgba(0,0,0,0.1);
+     margin-left: 5%;
+     margin-right: 5%;
+     margin-bottom: 70px;
+     border-radius: 20px;
 
     &__heading {
        font-size: 4rem;
        opacity: 80%;
+       padding-bottom: 20px;
+       border-bottom: 3px solid rgb(165, 165, 165);
     }
 
+    label{
+        color: rgb(34, 34, 34);
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
     &__inputbox {
         display: flex;
         flex-direction: column;
-
         & > span {
             font-size: 1.2rem;
             font-weight: 500;
@@ -21,23 +32,19 @@
     &__showBox {
         display: flex;
         flex-direction: column;
-
     }
 
     &__imageLink {
         display: block;
         border: none;
-        outline: none;
         font-size: 1.5rem;
         font-weight: 500;
         padding: 1.3rem .9rem;
         text-transform: capitalize;
-        border-radius: 9px 9px 0 0;
+        border-radius: 5px;
         width: 40%;
-        border-bottom: 2px solid #2D31FA;
-        margin-top: 4rem;
         margin-bottom: 3rem;
-
+        background-color: #e9e8e8;
         @media screen and (max-width: 480px) {
             width: 60%;
             font-size: 1.7rem;
@@ -70,17 +77,14 @@
     &__cat {
         display: block;
         border: none;
-        outline: none;
         font-size: 1.5rem;
         font-weight: 500;
-        padding: .9rem;
+        padding: 1.3rem .9rem;
         text-transform: capitalize;
-        border-radius: 9px 9px 0 0;
-        width: 20%;
-        border-bottom: 2px solid #2D31FA;
-        margin-top: 4rem;
+        border-radius: 5px;
+        width: 40%;
         margin-bottom: 3rem;
-
+        background-color: #e9e8e8;
         @media screen and (max-width: 480px) {
             width: 45%;
         }
@@ -89,15 +93,13 @@
     &__text {
         display: block;
         border: none;
-        outline: none;
-        font-size: 3rem;
-        padding: 1rem 2rem;
-        border-radius: 9px 9px 0 0;
-        width: 60%;
-        border-bottom: 2px solid #2D31FA;
+        font-size: 1.5rem;
+        padding: 1.3rem .9rem;
+        border-radius: 5px;
+        width: 40%;
         margin-bottom: 3rem;
         text-transform: capitalize;
-
+        background-color: #e9e8e8;
         &:focus {
             outline: none;
         }
@@ -110,15 +112,13 @@
     &__words {
         display: block;
         border: none;
-        outline: none;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         padding: 1rem;
-        border-radius: 9px 9px 0 0;
-        width: 80%;
-        border-bottom: 2px solid #2D31FA;
+        border-radius: 5px;
+        width: 100%;
         margin-bottom: 3rem;
         word-wrap: break-word;
-
+        background-color: #e9e8e8;
         &:focus {
             outline: none;
         }   
@@ -130,30 +130,29 @@
 
     &__date {
         border: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 3rem;
         cursor: pointer;
-        border-bottom: 2px solid #2D31FA;
-        color: #2D31FA;
+        border-radius: 5px;
+        padding: 1.3rem .9rem;
         width: 15%;
-
+        background-color: #e9e8e8;
         @media screen and (max-width: 480px) {
             width: 40%;
         }
     }
 
     &__submit {
+        margin-right: 2rem;
+        background-color: rgb(24, 131, 0);
+        border-radius: 5px;
+        font-weight: 600;
+        padding: 10px 30px;
+        color: white;
         border: none;
-        background-color: #2D31FA;
-        color: #fff;
-        padding: .7rem;
-        border-radius: 7px;
-        width: 8rem;
         cursor: pointer;
-        transition: background-color .3s;
-
         &:hover {
-            background-color: #1417c5;
+            background-color: rgb(32, 166, 1);
         }
     }
 }
