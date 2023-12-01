@@ -43,7 +43,7 @@ const Write = (props) => {
     if(user) {
         return ( 
             <div className="write">
-            <h2 className="write__heading">Add a Blog</h2>
+            <h2 className="write__heading">Escribe tu articulo</h2>
               <form onSubmit={formSubmitHandler} className="write__form">
                   <div className="write__inputbox">
                     {/* <div className="write__showBox">
@@ -52,16 +52,21 @@ const Write = (props) => {
                   <img className="write__showImg" src={picture && picture} alt="" />
                     </div> */}
                     {picture && <img className="write__showImg" src={picture} alt="blog" />}
-                <input ref={imageRef} onChange={onChangePicture} type="text" className="write__imageLink" placeholder="upload image URL..." required />
-                      <input ref={catRef} type="text" className="write__cat" placeholder="Category" required />
+                    <label>Imagen</label>
+                <input ref={imageRef} onChange={onChangePicture} type="text" className="write__imageLink" placeholder="URL de la imagen" required />
+                    <label>Categoria:</label>
+                      <input ref={catRef} type="text" className="write__cat" placeholder="Categoria del articulo" required />
                       
-                      <input type="text" className="write__text" placeholder="Title" ref={titleRef} required />
+                      <label>Titulo:</label>
+                      <input type="text" className="write__text" placeholder="Titulo del articulo" ref={titleRef} required />
                       
-                      <textarea ref={textRef} rows="4" type="text" className="write__words" placeholder="Write your Blog..." required />
+                      <label>Contenido:</label>
+                      <textarea ref={textRef} rows="4" type="text" className="write__words" placeholder="Contenido del blog" required />
 
+                      <label>Fecha:</label>
                       <input ref={dateRef} type="date" className="write__date" />
                   </div>
-                  <button className="write__submit">Publish</button>
+                  <button className="write__submit">Publicar</button>
         
               </form>  
             </div>
@@ -69,7 +74,7 @@ const Write = (props) => {
     }
     else {
         return <div className="notLog">
-            <p className="notLog__message">SIGN IN to write a BLOG</p>
+            <p className="notLog__message">Inicia sesion para escribir un articulo</p>
             <img src={write} alt="" className="notLog__img" />
         </div>
     }
