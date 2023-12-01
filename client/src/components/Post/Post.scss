@@ -3,8 +3,8 @@
     box-shadow: 0 1rem 1.7rem rgba(0,0,0,0.1);
     margin: 3rem auto 2rem 0;
     overflow: hidden;
-    border-radius: 7px;
-    background-color: #F3F8FF;
+    border-radius: 10px;
+    background-color: white;
 
     &:not(:last-child) {
         margin-right: 8rem;
@@ -18,7 +18,7 @@
     &__image {
         width: 100%;
         object-fit: cover;
-        border-radius: 7px;
+        border-radius: 10px 10px 0px 0px;
     }
 
     &__info {
@@ -26,7 +26,7 @@
     }
 
     &__cat {
-        background-color: #2D31FA;
+        background-color: rgb(24, 131, 0);
         width: 9rem;
         padding: .5rem;
         text-align: center;
@@ -61,5 +61,6 @@
         font-size: 1.3rem;
         font-weight: 600;
         opacity: 90%;
+        color: rgb(164, 164, 1);
     }
 }
