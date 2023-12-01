@@ -7,24 +7,20 @@ import "./AboutUs.scss"
 const AboutUs = () => {
     return (
         <section className="about">
-        <h2 className="about__title">About us</h2>
+        <h2 className="about__title">Sobre nosotros</h2>
 
         <div className="about__details">
 
         <div className="about__left">
-        <h3 className="about__mainlefttitle">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <p className="about__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem obcaecati itaque quaerat velit dicta magnam, aspernatur est quam amet cumque asperiores deleniti mollitia quis quo non harum adipisci! Sint eos mollitia quasi, quaerat sit eligendi nihil cum pariatur non, dolor consequatur maiores modi est error dolorum vero, velit temporibus rerum.</p>
-                <button className="about__btn">Contact Us</button>
+        <h3 className="about__mainlefttitle">Un viaje filosófico colectivo hacia la comprensión profunda.</h3>
+                <p className="about__paragraph">Bienvenidos a nuestro rincón de reflexión, donde la búsqueda del conocimiento se entrelaza con la pasión por la filosofía. En este espacio, nos sumergimos en las corrientes del pensamiento, explorando las profundidades de las grandes ideas que han dado forma a la humanidad. Somos un colectivo de pensadores apasionados que buscan desentrañar los misterios de la existencia y compartir las revelaciones que surgen en el camino. Únete a nosotros mientras navegamos por las aguas de la filosofía, desafiando las convenciones y ampliando los horizontes de la comprensión humana. Juntos, aspiramos a fomentar un diálogo enriquecedor que inspire, cuestione y celebre la maravilla del pensamiento filosófico. ¡Bienvenidos a nuestro viaje intelectual!</p>
                 <div className="about__social">
             <FontAwesomeIcon className="about__socialicons" icon={faInstagram} />
             <FontAwesomeIcon className="about__socialicons" icon={faLinkedin} />
             <FontAwesomeIcon className="about__socialicons" icon={faTwitter} />
             </div>
             </div>
-            
-            <div className="about__right">
-                <img src={aboutus} alt="" className="about__image" />
-            </div>
+        
         </div>
             
         </section>
