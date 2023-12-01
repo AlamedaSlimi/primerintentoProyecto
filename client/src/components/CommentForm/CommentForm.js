@@ -20,8 +20,8 @@ const addComment = useRef();
 
     return <div className="comment">
     <form onSubmit={commentSubmitHandler}>
-        <input ref={addComment} type="text" className="comment__area"  placeholder="Add a comment..." required />
-        <button className="comment__add">Add Comment</button>
+        <input ref={addComment} type="text" className="comment__area"  placeholder="Agrega tu comentario..." required />
+        <button className="comment__add">Comentar</button>
     </form>
     </div>
 };
