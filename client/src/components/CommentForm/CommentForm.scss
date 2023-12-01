@@ -1,6 +1,6 @@
 .comment {
     width: 100%;
-    background-color: #EFEFEF;
+    background-color: #e9e8e8;
     padding: 3rem;
     border-radius: 8px;
     text-align: center;
@@ -11,10 +11,9 @@
         padding: .9rem .8rem;
         outline: none;
         margin: 0 auto 2rem auto;
-        border-radius: 3px;
-        border-bottom: 3px solid #2D31FA;
+        border-radius: 5px;
         width: 55%;
-        background-color: #DDDDDD;
+        background-color: white;
 
         &::placeholder {
             font-weight: 600;
@@ -26,7 +25,7 @@
     }
 
     &__add {
-        background-color: #2124c0;
+        background-color: rgb(24, 131, 0);
         color: #fff;
         border: none;
         padding: .9rem .4rem;
@@ -34,9 +33,10 @@
         border-radius: 4px;
         width: 14rem;
         cursor: pointer;
-
+        font-weight: bold;
+        
         &:hover {
-            background-color: #2D31FA;
+            background-color: rgb(31, 167, 1);
         }
     }
 }
