@@ -1,9 +1,16 @@
 .about {
-
+    min-height: 650px;
     padding: 4rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 70px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 1rem 1.7rem rgba(0,0,0,0.1);
 
     &__details {
         display: flex;
+        text-align: justify;
 
         @media screen and (max-width: 480px) {
             flex-direction: column;
@@ -50,24 +57,6 @@
         opacity: 85%;
     }
 
-    &__btn {
-        border: none;
-        background-color: #2D31FA;
-        cursor: pointer;
-        padding: 1.2rem 3rem;
-        color: #fff;
-        font-size: 2rem;
-        letter-spacing: .5rem;
-        margin-top: 2rem;
-        border-radius: 20px;
-
-        &:hover {
-            background-color: #1d20c2;
-            color: #fff;
-
-        }
-    }
-
     &__social {
         margin: 3rem 2rem;
     }
@@ -79,7 +68,7 @@
         cursor: pointer;
 
         &:hover {
-            color: #2D31FA;
+            color: #565656;
         }
     }
 
